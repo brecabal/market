@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supermercado</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    input{
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <section id="super">
+    <div class="container">
+      <div class="row">
+<!-- Productos -->
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Leche</h2>
+                <h2>$800</h2>
+                <p>Stock: <span id="stLeche"></span></p>
+                <span>Cantidad:</span> <input id="cantidadLeche" type="number">
+                <button id="btnLeche" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Cif</h2>
+                <h2>$1500</h2>
+                <p>Stock: <span id="stCif"></span></p>
+                <span>Cantidad:</span> <input id="cantidadCif" type="number">
+                <button id="btnCif" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Cafe</h2>
+                <h2>$1000</h2>
+                <p>Stock: <span id="stCafe"></span></p>
+                <span>Cantidad:</span> <input id="cantidadCafe" type="number">
+                <button id="btnCafe" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Té</h2>
+                <h2>$2000</h2>
+                <p>Stock: <span id="stTe"></span></p>
+                <span>Cantidad:</span> <input id="cantidadTe" type="number">
+                <button id="btnTe" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Confort</h2>
+                <h2>$3000</h2>
+                <p>Stock: <span id="stConfort"></span></p>
+                <span>Cantidad:</span> <input id="cantidadConfort" type="number">
+                <button id="btnConfort" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Aceite</h2>
+                <h2>$1000</h2>
+                <p>Stock: <span id="stAceite"></span></p>
+                <span>Cantidad:</span> <input id="cantidadAceite" type="number">
+                <button id="btnAceite" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Fideos</h2>
+                <h2>$500</h2>
+                <p>Stock: <span id="stTallarines"></span></p>
+                <span>Cantidad:</span> <input id="cantidadTallarines" type="number">
+                <button id="btnTallarines" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="producto text-center" style="border:2px solid #CCC;padding:10px; margin-bottom:20px;">
+                <h2 class="text-success">Arroz</h2>
+                <h2>$900</h2>
+                <p>Stock: <span id="stArroz"></span></p>
+                <span>Cantidad:</span> <input id="cantidadArroz" type="number">
+                <button id="btnArroz" class="btn btn-success">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- Carrito -->
+        <div class="col-md-6">
+          <h1>Carrito</h1>
+          <div id="carro">
+
+          </div>
+          <button id="verTotal" class="btn btn-lg btn-success">Ver Total</button>
+          <h2>Total: <span id="total"></span></h2>
+          <button class="btn btn-lg btn-success">Comprar</button>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <script src="compras.js"></script>
+</body>
+</html>
