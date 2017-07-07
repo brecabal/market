@@ -1,6 +1,7 @@
 //instancia de la lista
 var bodegaSupermercado = new Stock()
 //acá el supermercado se llena con los productos generados aleatoriamente
+bodegaSupermercado.printProducts()
 bodegaSupermercado.generarStockSupermercado()
 bodegaSupermercado.mostrarStock()
 var carro = new Carrito()
