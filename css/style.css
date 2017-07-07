@@ -1,0 +1,17 @@
+input {
+	width: 100%;
+}
+
+img  {
+	height: 100px;
+}
+
+.btn-success {
+	margin-top: 15px;
+}
+
+.producto{
+	border:2px solid #CCC;
+	padding:10px; 
+	margin-bottom:20px;
+}
